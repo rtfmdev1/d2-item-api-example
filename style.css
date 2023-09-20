@@ -29,6 +29,7 @@ body {
 
 /* This is where i should be able to move the damn container box */
 .main {
+  display: flex;
   justify-content: center;
   align-items: center;
 }

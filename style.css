@@ -70,3 +70,7 @@ footer {
   text-align: center;
   margin-top: 100%;
 }
+
+.rune:hover {
+  transform: scale(1.5);
+}

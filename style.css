@@ -1,6 +1,16 @@
+* {
+  font-family: "PT Serif";
+  color: white;
+}
+
 .header-main {
   width: 100%;
-  background-color: #533a7b;
+  background-image: url(/img/row.png);
+  background-size: contain;
+  min-height: 4vh;
+  margin-bottom: 10vh;
+  text-align: center;
+  margin: 0%;
 }
 
 body {
@@ -9,6 +19,7 @@ body {
   background-position: top;
   background-size: cover;
   background-color: black;
+  background-attachment: fixed;
 }
 .rune-container {
   font-size: smaller;
@@ -17,7 +28,8 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 25%;
+  max-width: 131px;
+
   min-height: 40%;
   gap: 8%;
   row-gap: 1vh;
@@ -30,6 +42,31 @@ body {
 /* This is where i should be able to move the damn container box */
 .main {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
+  justify-content: stretch;
+}
+.infoscreen {
+  color: white;
+  border: 2px solid red;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 80%);
+  border-radius: 10px;
+}
+.runeinfo {
+  color: white;
+}
+.infoscreen h1 {
+  text-decoration: underline;
+}
+h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+footer {
+  background-image: url(/img/row.png);
+  background-size: contain;
+  text-align: center;
+  margin-top: 100%;
 }

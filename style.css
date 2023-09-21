@@ -5,7 +5,7 @@
 
 .header-main {
   width: 100%;
-  background-image: url(/img/row.png);
+  background-image: url(https://raw.githubusercontent.com/rtfmdev1/d2-item-api-example/main/img/row.png);
   background-size: contain;
   min-height: 4vh;
   margin-bottom: 10vh;
@@ -65,7 +65,7 @@ h2 {
 }
 
 footer {
-  background-image: url(/img/row.png);
+  background-image: url(https://raw.githubusercontent.com/rtfmdev1/d2-item-api-example/main/img/row.png);
   background-size: contain;
   text-align: center;
   margin-top: 100%;

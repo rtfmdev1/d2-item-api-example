@@ -1,32 +1,72 @@
 * {
   font-family: "PT Serif";
-  color: black;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 body {
   display: grid;
   grid-template-columns: 1fr, 7fr;
   gap: 10px;
+  text-align: center;
+  grid-template-areas:
+    "header header"
+    "rc ri"
+    "soc auth";
+  background-image: url(/img/bg2.jpeg);
+  color: whitesmoke;
 }
 
 header {
   grid-column: 1 / 3;
+  grid-area: header;
+  background-color: rgba(0, 0, 0, 50%);
+  border: 5px solid black;
 }
 .rune-container {
   grid-column: 1 / 1;
   display: grid;
   grid-template-columns: repeat(3, 50px);
-  grid-auto-rows: minmax(50px auto);
+  border: 5px solid black;
+  grid-area: rc;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 50%);
 }
+
 .rune-container > img {
   max-width: 50px;
 }
 .rune-info {
   grid-column: 2 / 3;
+  border: 1px solid black;
+  grid-area: ri;
+  background-color: rgba(0, 0, 0, 50%);
 }
 .author {
-  grid-column: 2 /3;
+  grid-column: 2 / 3;
+  grid-area: auth;
 }
 .socials {
   grid-column: 1 / 2;
+  border: 1px solid black;
+  grid-area: soc;
+  background-color: rgba(0, 0, 0, 50%);
+}
+
+/* Style all font awesome icons */
+.fa {
+  font-size: 50px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* CONDITIONALS */
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+  transform: scale(2);
+}
+
+.rune:hover {
+  transform: scale(1.3);
 }

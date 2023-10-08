@@ -1,76 +1,32 @@
 * {
   font-family: "PT Serif";
-  color: white;
+  color: black;
+  border: 1px solid black;
 }
-
-.header-main {
-  width: 100%;
-  background-image: url(https://raw.githubusercontent.com/rtfmdev1/d2-item-api-example/main/img/row.png);
-  background-size: contain;
-  min-height: 4vh;
-  margin-bottom: 10vh;
-  text-align: center;
-  margin: 0%;
-}
-
 body {
-  background-image: url(img/d3.png);
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-  background-color: black;
-  background-attachment: fixed;
+  display: grid;
+  grid-template-columns: 1fr, 7fr;
+  gap: 10px;
+}
+
+header {
+  grid-column: 1 / 3;
 }
 .rune-container {
-  font-size: smaller;
-  color: white;
-  border: 4px solid white;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 131px;
-
-  min-height: 40%;
-  gap: 8%;
-  row-gap: 1vh;
-  background-color: rgba(0, 0, 0, 70%);
+  grid-column: 1 / 1;
+  display: grid;
+  grid-template-columns: repeat(3, 50px);
+  grid-auto-rows: minmax(50px auto);
 }
-.rune-container img {
-  max-width: 3vh;
+.rune-container > img {
+  max-width: 50px;
 }
-
-/* This is where i should be able to move the damn container box */
-.main {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  justify-content: stretch;
+.rune-info {
+  grid-column: 2 / 3;
 }
-.infoscreen {
-  color: white;
-  border: 2px solid red;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 80%);
-  border-radius: 10px;
+.author {
+  grid-column: 2 /3;
 }
-.runeinfo {
-  color: white;
-}
-.infoscreen h1 {
-  text-decoration: underline;
-}
-h2 {
-  text-align: center;
-  text-decoration: underline;
-}
-
-footer {
-  background-image: url(https://raw.githubusercontent.com/rtfmdev1/d2-item-api-example/main/img/row.png);
-  background-size: contain;
-  text-align: center;
-  margin-top: 100%;
-}
-
-.rune:hover {
-  transform: scale(1.5);
+.socials {
+  grid-column: 1 / 2;
 }
